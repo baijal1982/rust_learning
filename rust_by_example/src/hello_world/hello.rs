@@ -47,4 +47,18 @@ fn main() {
     // handling. This will not work.
     println!("This struct `{}` won't print...", Structure(3));
     // FIXME ^ Comment out this line.
+
+    let pi = 3.141592;
+    println!("the pic is roughly {:.3}", pi);
+}
+
+#[cfg(test)]
+
+mod test {
+
+    use super::*;
+    #[test]
+    pub fn test() {
+       main();
+    }
 }
